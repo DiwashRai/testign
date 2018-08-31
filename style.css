@@ -51,7 +51,7 @@ ul, ol {
     border: 2px solid black;
     width: 500px;
     height: 500px;
-    grid-template: repeat(8, 1fr)/repeat(8, 1fr);
+    grid-template: repeat(10, 1fr)/repeat(8, 1fr);
 }
 
 .box {
@@ -60,14 +60,21 @@ ul, ol {
 }
 
 .a {
-    grid-area: 1 / 1 / span 8 / span 1;
+    grid-area: 2 / 1 / span 8 / span 1;
 }
 
 .b {
-    grid-area: 1 / 2 / span 8 / span 6;
+    grid-area: 2 / 2 / span 8 / span 6;
 }
 
 .c {
-    grid-area: 1 / 8 / span 8 / span 1;
+    grid-area: 2 / 8 / span 8 / span 1;
 }
 
+.header {
+    grid-area: 1 / 1 / span 1 / span 8;
+}
+
+.footer {
+    grid-area: 10 / 1 / span 1 / span 8;
+}
