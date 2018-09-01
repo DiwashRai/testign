@@ -64,7 +64,10 @@ ul, ol {
 }
 
 .b {
+    display: grid;
     grid-area: 2 / 2 / span 8 / span 6;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    grid-gap: 5px;
 }
 
 .c {
@@ -77,4 +80,8 @@ ul, ol {
 
 .footer {
     grid-area: 10 / 1 / span 1 / span 8;
+}
+
+.item {
+    border: 1px dashed blue;
 }
