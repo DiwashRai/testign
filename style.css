@@ -66,8 +66,11 @@ ul, ol {
 .b {
     display: grid;
     grid-area: 2 / 2 / span 8 / span 6;
-    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    grid-template: repeat(4,100px) / repeat(4, 1fr);
     grid-gap: 5px;
+    grid-auto-flow: row;
+    grid-auto-rows: 100px;
+    overflow: scroll;
 }
 
 .c {
