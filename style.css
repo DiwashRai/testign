@@ -113,10 +113,12 @@ p {
 }
 
 .menu-text {
+    background-color: white;
     position: absolute;
     border: 2px solid black;
     padding: 8px 6px;
     left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media only screen and (max-width: 600px){
