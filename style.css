@@ -4,7 +4,7 @@
 }
 
 html {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 body {
@@ -93,15 +93,30 @@ ul, ol {
     border: 1px dashed blue;
 }
 
+p {
+    text-align: center;
+}
+
 .date-container {
     text-align: center;
 }
 
-.horizontal-line {
-    height: 2px;
-    width: 400px;
+.menu-container {
+    position: relative;
+    width: 50rem;
+    margin: 2.5rem auto;
+}
+
+.menu-line {
+    height: 0.125rem;
     background-color: black;
-    margin: 0 auto;
+}
+
+.menu-text {
+    position: absolute;
+    border: 2px solid black;
+    padding: 8px 6px;
+    left: 50%;
 }
 
 @media only screen and (max-width: 600px){
