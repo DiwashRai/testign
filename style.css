@@ -8,7 +8,8 @@ html {
 }
 
 body {
-    font-family: Roboto;
+    font-family: 'Inconsolata', Courier, monospace;
+    background-color:#fbf7f5;
 }
 
 p {
@@ -127,8 +128,11 @@ p {
     left: 100%;
 }
 
+body div {
+    background-color: inherit;
+}
+
 .menu-text {
-    background-color: white;
     position: absolute;
     border: 2px solid black;
     padding: 8px 6px;
