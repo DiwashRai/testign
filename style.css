@@ -142,6 +142,19 @@ body div, body .menu-text {
     transform: translate(-50%, -50%);
 }
 
+ul {
+    width: 100%;
+}
+
+.media-button {
+    margin: 2rem 0.5rem;
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    width: 5rem;
+}
+
 @media only screen and (max-width: 600px){
     p {
         width: 95%;
