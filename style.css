@@ -150,19 +150,23 @@ ul {
     border: 3px solid black;
     background-color: white;
     margin: 0 auto;
+    padding: 1rem;
     width: 20rem;
 }
 
 .project-img {
+    border: 1px solid black;
     width: 100%;
     height: auto;
 }
 
 .project-title {
+    width: 100%;
     color: black;
 }
 
 .project-description {
+    box-sizing: border-box;
     border: 1px dotted blue;
     width: 100%;
     padding: 1rem;
