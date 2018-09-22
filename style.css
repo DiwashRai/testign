@@ -181,6 +181,19 @@ ul {
     width: 5rem;
 }
 
+.side-bar {
+    position: fixed;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: maroon;
+    right: 0%;
+    top: 0%;
+    height: 100vh;
+    writing-mode: vertical-lr;
+    text-align: center;
+    padding: 0 2rem;
+}
+
 @media only screen and (max-width: 600px){
     p {
         width: 95%;
