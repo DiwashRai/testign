@@ -8,6 +8,7 @@ html {
 }
 
 body {
+    text-align: center;
     font-family: 'Inconsolata', Courier, monospace;
     background-color:#fbf7f5;
     padding-top: 2rem;
@@ -192,6 +193,23 @@ ul {
     writing-mode: vertical-lr;
     text-align: center;
     padding: 0 2rem;
+}
+
+.header {
+    border-top: 0.1875rem solid darkgrey;
+    border-bottom: 0.1875rem solid darkgrey;
+    display: inline-block;
+    font: arial;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.footer {
+    height: 6rem;
 }
 
 @media only screen and (max-width: 600px){
