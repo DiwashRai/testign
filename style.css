@@ -148,15 +148,13 @@ ul {
 }
 
 .project-card {
-    border: 3px solid black;
-    background-color: white;
+    border: 1px solid black;
+    background-color: yellow;
     margin: 0 auto;
-    padding: 1rem;
     width: 20rem;
 }
 
 .project-img {
-    border: 1px solid black;
     width: 100%;
     height: auto;
 }
@@ -168,7 +166,7 @@ ul {
 
 .project-description {
     box-sizing: border-box;
-    border: 1px dotted blue;
+    background-color: lightgrey;
     width: 100%;
     padding: 1rem;
 }
