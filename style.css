@@ -12,7 +12,6 @@ body {
     font-family: 'Inconsolata', Courier, monospace;
     background-color:#fbf7f5;
     padding-top: 2rem;
-    padding-bottom: 2rem;
 }
 
 p {
@@ -152,7 +151,7 @@ ul {
     margin: 0 auto;
     width: 20rem;
 }
-z
+
 .project-img {
     box-sizing: border-box;
     border-left: 1px solid black;
@@ -217,8 +216,17 @@ z
     text-align: center;
 }
 
-.footer {
+footer {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: darkgrey;
     height: 6rem;
+    justify-content: center;
+}
+
+.footer-text {
+    color: white;
 }
 
 @media only screen and (max-width: 600px){
