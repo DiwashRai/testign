@@ -1,67 +1,73 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="./style.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
-    <title>Front End Playground</title>
-  </head>
+    <head>
+        <link href="./style.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+        <title>Diwash Rai</title>
+    </head>
+    <body>
+        <!-- wrapper for nav bar and contents -->
+        <div class="wrapper">
+            <!-- veritcal navigation bar -->
+            <nav class="sidebar">
+                <ul>
+                    <li><strong>Home</strong></li>
+                    <li>Blog</li>
+                    <li>Thoughts</li>
+                    <li>Interests</li>
+                    <li>CV</li>
+                </ul>
+            </nav>
+            
+            <!-- main content. centre of page -->
+            <div class="content">
+                <header>
+                    <h1 class="logo">Diwash Rai</h1>
+                    <ul class="contact">
+                        <li>Github</li>
+                        <li>LinkedIn</li>
+                        <li>Email</li>
+                        <li>HackerRank</li>
+                    </ul>
+                </header>
+                
+                <article>
+                  <section>
+                    <h2>About Me</h2>
+                    <p>
+                      Hi, I'm Diwash Rai.</br>
+                      I am a computer science graduate and an aspiring developer. I also make 'attempts' at being a badminton player, amateur philosopher, keyboard enthusiast and various other ventures.</br></br>
+                      I enjoy wrestling with and overcoming problems; possess an unsatiable appetite for new practical knowledge; and have this compulsion to pursue efficiency and productivity.
+                    </p>
+                  </section>
+            
+                  <section>
+                    <h2>Projects</h2>
+                    <section class="sub-section">
+                      <h3>Complete</h3>
+                      <ul>
+                        <li>Genetic Algorithm</li>
+                        <li>Discrete event based simulation</li>
+                        <li>Minimax tictactoe</li>
+                      </ul>
+                    </section>
+                    <section class="sub-section">
+                      <h3>Upcoming</h3>   
+                        <ul>
+                          <li>Javascript snake</li>
+                          <li>Timeboxing desktop application in Java</li>
+                        </ul>
+                    </section>
+                  </section>
 
-  <body> 
-    <div class="header">PERSONAL PORTFOLIO TITLE</div>
-    <p>Still experimenting with HTML, CSS and eventually Javascript. Planning to make my own personal website eventually. None of what is here now is indicative of the final product (hopefully).</p>
-    <div class="menu-container">
-      <hr class="menu-line">
-      <div class="line-dot-1"></div>
-      <div class="line-dot-2"></div>
-      <div class="menu-text">About Me</div>
-    </div>
-    <div class="menu-container">
-      <hr class="menu-line">
-      <div class="line-dot-1"></div>
-      <div class="line-dot-2"></div>
-      <a  class ="menu-text" href="./projects.html">
-        <div>Projects</div>
-      </a>
-    </div>
-
-    <p>Lorem ipsum dolor sit amet, <span style="background-color: blue; color: white">consectetur</span> adipiscing elit. Aenean quis elit eu nisl ullamcorper facilisis. Aliquam sit amet pretium tortor. Nunc quis libero a eros placerat accumsan eget vel nunc. Duis ornare non ligula in dapibus. Duis aliquet massa ac lorem maximus, at tincidunt nisl imperdiet. Nulla sem tellus, volutpat ut fermentum ac, consectetur ac quam. Proin at vestibulum tortor. Quisque commodo ut orci vitae congue. Nullam ex urna, viverra nec libero et, sollicitudin egestas elit. In eu arcu a neque feugiat tincidunt. Etiam aliquam luctus dapibus. Nulla eget facilisis lectus. Nam pulvinar sapien vel arcu posuere <span style="background-color: yellow; color: red">venenatis.</span></p>
-
-    <ul>
-      <li class="media-button">Github</li>
-      <li class="media-button">LinkedIn</li>
-      <li class="media-button">Email</li>
-      <li class="media-button">Twitter</li>
-    </ul>
-
-    <div class="project-card">
-      <img src="./img/OnerousApp.png" class="project-img">
-      <h3 class="project-title">Onerous discrete event simulation android application</h3>
-      <p class="project-description">Android application used to demonstrate what discrete event simulations are to military personnel. App needs to be have sufficient capabilities to demonstrate the value of discrete event simulations.</p>
-    </div>
-
-    <div class="side-bar">Projects</div>
-
-    <footer>
-      <span class="footer-text">Created by <strong>Diwash Rai</strong> using <strong>Visual Studio Code</strong></span>
-    </footer>
-
-    <script type="text/javascript">
-    var today = new Date();
-    var dd = today.getDate();
-    var mm = today.getMonth() + 1;
-    var yyyy = today.getFullYear();
-
-    if (dd < 10){
-      dd = '0' + dd;
-    }
-
-    if (mm < 10) {
-      mm = '0' + mm;
-    }
-  
-    document.getElementById("date").innerHTML = dd + '/' + mm + '/' + yyyy;
-    </script>
-
+                </article>
+            </div>
+        </div>
+        
+        <!-- container for footer -->
+        <footer>
+            © Diwash Rai 2019
+        </footer>
     </body>
-  </body>
-</html>  
+</html>
