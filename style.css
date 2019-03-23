@@ -99,10 +99,11 @@ body {
 }
 
 header p {
-    margin-top: -0.875rem;;
+    margin-top: -0.125rem;;
 }
 
 .content header ul {
+    margin-top: -0.5rem;
     padding-left: 0rem;
 }
 
