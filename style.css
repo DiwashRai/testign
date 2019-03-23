@@ -1,4 +1,4 @@
-/* ================ Normalising settings ================ */
+/* ================ Normalising Settings ================ */
 * {
     margin: 0;
     padding: 0;
@@ -12,72 +12,118 @@ ul {
     padding-left: 2.5rem;
 }
 
-/* ================ Layout section ================ */
+/* ================ Layout Section ================ */
 
 body {
-    font-family: 'Raleway', sans-serif;
-    position: relative;
+    font-family: 'Exo 2', sans-serif;
 }
 
 .wrapper {
     display: flex;
     align-content: flex-start;
-    position: relative;
 }
 
     .sidebar {
-        display: relative;
+        background: #808080;
+        /* background: black; */
+        position: relative;
         box-sizing: border-box;
         order: 0;
         width: 30%;
-        border-right: 1px solid black;
+        min-height: 100vh;
     }
-        .sidebar ul {
-            font-size: 1.25rem;
-            list-style-type: none;
-            padding-left: 0;
-            top: 14rem;
-            position: fixed;
-            left: 15%;
-            transform: translateX(-50%);
-        }
-            .sidebar ul li {
-                padding-top: 0.125rem;
-                padding-bottom: 0.0.125rem;
-            }
-
+    
     .content {
         position: relative;
-        left: 10rem;
+        margin-left: 10rem;
         box-sizing: border-box;
-        min-height: 50rem;
         width: 40rem;
-        padding: 2rem 0rem 2rem 0rem;
         order: 1;
     }
-        .content header ul {
-            padding-left: 0rem;
+
+        header {
+            padding: 1.5rem 0;
+            text-align: center;
+            border-bottom: 2px solid lightgrey;
         }
 
-footer {
-    position: relative;
-    text-align: center;
-    border-top: 1px solid black;
-    margin: 2rem;
+        article {
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;  /* Minimum of footer height or can cause overlapping */
+        }
+
+        footer {
+            text-align: center;
+            border-top: 2px solid lightgrey;
+
+            position: absolute;
+            bottom: 0;
+            height: 1.5rem;
+            width: 100%;
+        }
+
+/* ================ Sidebar Components ================ */
+
+.sidebar ul {
+    font-size: 1.25rem;
+    list-style-type: none;
+    padding-left: 0;
+    top: 14rem;
+    position: fixed;
+    left: 24%;
+    transform: translateX(-50%);
+}
+    .sidebar li {
+        padding-top: 0.125rem;
+        padding-bottom: 0.0.125rem;
+    }
+
+    .sidebar a, .sidebar li {
+        text-decoration: none;
+        color: #d9d9d9;
+    }
+
+#inactive-link {
+    font-weight: 700;
+    color: aqua;
+    pointer-events: none;
+    cursor: defaut;
 }
 
-/* ================ Under development ================ */
-header {
-    text-align: center;
-    padding-bottom: 4rem;
-}
+/* ================ Content Header Components ================ */
 
 .logo {
     font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+
 }
 
-.contact li{
+header p {
+    margin-top: -0.875rem;;
+}
+
+.content header ul {
+    padding-left: 0rem;
+}
+
+.contact li {
     display: inline-block;
+    margin: 0 0.1875rem;
+    padding-top: 0.125rem;
+}
+
+.contact img {
+    height: 32px;
+    width: auto;
+}
+
+/* ================ Content Article Components ================ */
+article {
+    min-height: 50vh;
+}
+
+article p {
+    padding-bottom: 1rem;
 }
 
 section {
@@ -88,4 +134,4 @@ section {
     margin-top: 1rem;
 }
 
-/* ================ Temporary ================ */
+/* ================ Components Under Development ================ */
