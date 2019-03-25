@@ -135,4 +135,10 @@ section {
     margin-top: 1rem;
 }
 
+/* ================ Misc styles ================ */
+
+.spaced-list li {
+    padding-bottom: 0.5rem;
+}
+
 /* ================ Components Under Development ================ */
