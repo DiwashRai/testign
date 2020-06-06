@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming Concepts on Diwash Rai</title>
+    <link>http://www.diwashrai.com/programming-concepts/</link>
+    <description>Recent content in Programming Concepts on Diwash Rai</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 05 Jun 2020 01:50:07 +0100</lastBuildDate>
+    
+	<atom:link href="http://www.diwashrai.com/programming-concepts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pc Second Post</title>
+      <link>http://www.diwashrai.com/programming-concepts/pc-second-post/</link>
+      <pubDate>Fri, 05 Jun 2020 01:34:04 +0100</pubDate>
+      
+      <guid>http://www.diwashrai.com/programming-concepts/pc-second-post/</guid>
+      <description> Pc Second Post </description>
+    </item>
+    
+    <item>
+      <title>Pc First Post</title>
+      <link>http://www.diwashrai.com/programming-concepts/pc-first-post/</link>
+      <pubDate>Fri, 05 Jun 2020 01:34:00 +0100</pubDate>
+      
+      <guid>http://www.diwashrai.com/programming-concepts/pc-first-post/</guid>
+      <description> Pc First Post </description>
+    </item>
+    
+  </channel>
+</rss>

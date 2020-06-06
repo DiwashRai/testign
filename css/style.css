@@ -1,0 +1,178 @@
+/* ================ Normalising Settings ================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    height: 100%;
+}
+
+ul {
+    padding-left: 2.5rem;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* ================ Variables Section ================ */
+
+:root {
+    --forest-green-light: #319b78;
+    --forest-green-accent: rgba(31, 97, 75, 0.08);
+    --forest-green: #1f614b;
+    --lightlightgray: #E8E8E8;
+
+    --nav-transition-in: 0.25s;
+    --nav-transition-out: 0.3s;
+}
+
+/* ================ Layout Section ================ */
+
+body {
+    height: 100%;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.grid {
+    height: 100%;
+    display: grid;
+    grid-template: 
+      "navbar main-content right-sidebar" 1fr
+      / 1fr 2fr 1fr;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.main-content {
+    grid-area: main-content;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.18);
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+/* ================ Navigation bar styling ================ */
+
+.navbar li, .nav-banner-title, .nav-banner-subtitle {
+    text-align: right;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-banner {
+    margin-bottom: 2rem;
+    padding: 1rem 2rem 1rem 0rem;
+    background-color: white;
+    transition: background-color var(--nav-transition-out);
+}
+
+.nav-banner-title {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+.nav-list ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-list li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 32px 0.5rem 0rem;
+    background-color: white;
+    transition: background-color var(--nav-transition-out);
+}
+
+.nav-list li:hover, .nav-banner:hover {
+    background-color: var(--forest-green-accent);
+    border-right: 2px var(--forest-green-light) solid;
+    padding-right: 30px;
+    transition: background-color var(--nav-transition-in);
+}
+
+.nav-active, li.nav-active{
+    background-color: var(--forest-green-accent);
+    border-right: 2px var(--forest-green-light) solid;
+    padding-right: 30px;
+}
+
+/* ================ Content List styling ================ */
+
+.article-post-container p {
+    padding-bottom: 1rem;
+}
+
+.post-anchor {
+    text-decoration: none;
+}
+
+.post-item-wrapper:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.post-item-wrapper, .post-item-wrapper:visited {
+    color: black;
+}
+
+.post-item-wrapper:hover {
+    color: var(--forest-green);
+}
+
+.post-item-wrapper:hover .post-item-title {
+    text-decoration: underline;
+}
+
+.post-item-flex {
+    margin: 0 2.5rem 0 2.5rem;
+    padding: 2rem 0 2rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.post-item-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 0.25rem;
+}
+
+.post-item-description {
+    font-size: 1.125rem;
+    padding-bottom: 0.5rem;
+}
+
+.post-item-date {
+    font-size: 0.9375rem;
+}
+
+.post-item-image-wrapper {
+    margin-left: 1.5rem;
+}
+
+.post-item-image {
+    width: 230px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--lightlightgray);
+    border-radius: 6px;
+}
+
+/* ================ Content Single Article styling ================ */
+
+.post-body {
+    margin: 2.5rem 2rem;
+}
