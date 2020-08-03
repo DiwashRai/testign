@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link href="/css/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <title>Diwash Rai</title>
+  </head>
+
+  <body>
+    
+    <div class="grid">
+      
+      <div class="navbar">
+        <a href="http://www.diwashrai.com/">
+  <header class="nav-banner ">
+    <div class="nav-banner-title">Diwash Rai</div>
+    <div class="nav-banner-subtitle">Personal Blog</div>
+  </header>
+</a>
+        
+<nav class="nav-list">
+  <ul>
+    
+    <a href="/coding"><li class="nav-active">Coding</li></a>
+    
+    <a href="/productivity"><li>Productivity</li></a>
+    
+    <a href="/links"><li>Links</li></a>
+    
+  </ul>
+</nav>
+      </div>
+      
+      <div class="main-content">
+        
+  <div class="article-post-container">
+    <div class="post-banner" style="background-image: url('/coding/coding_post_1/wojciech-swiech-SZ9jmeD9jIg-unsplash.jpg'); background-position: center; height: 300px">
+    </div>
+    <div class="post-body">
+      <h1 id="hahahugoshortcode-s0-hbhb">Markdown Cheatsheet</h1>
+<h2 id="headings">Headings</h2>
+<p>The following HTML elements &lt;h1&gt;-&lt;h6&gt; elements represent six levels of section headings. &lt;h1&gt; is the highest section level while &lt;h6 is the lowest.</p>
+<h1 id="h1">H1</h1>
+<h2 id="h2">H2</h2>
+<h3 id="h3">H3</h3>
+<h4 id="h4">H4</h4>
+<h5 id="h5">H5</h5>
+<h6 id="h6">H6</h6>
+<h2 id="emphasis">Emphasis</h2>
+<p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.<br>
+Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.<br>
+Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.<br>
+Strikethrough uses two tildes. <del>Scratch this.</del></p>
+<h2 id="lists">Lists</h2>
+<ol>
+<li>First ordered list item.</li>
+<li>Second ordered list item.</li>
+</ol>
+<ul>
+<li>Unordered sub-list.</li>
+</ul>
+<ol>
+<li>
+<p>Actual number doesn&rsquo;t matter. Just that it&rsquo;s a number.</p>
+</li>
+<li>
+<p>Ordered sub-list.</p>
+</li>
+<li>
+<p>And another item.</p>
+<p>You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (atleast one, but we&rsquo;ll use three here to also align the raw Markdown).</p>
+<p>To have a line break wthout a paragraph, you will need to use two trailing spaces.<br>
+Note that this line is separate, but within the same paragraph.<br>
+(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required).</p>
+</li>
+</ol>
+<ul>
+<li>Unordered list can use asterisks</li>
+</ul>
+<ul>
+<li>Or minuses</li>
+</ul>
+<ul>
+<li>or pluses</li>
+</ul>
+<h2 id="links">Links</h2>
+<p>There are two ways to create links.</p>
+<p><a href="https://www.google.com">I&rsquo;m an inline style link</a><br>
+<a href="https://www.google.com" title="Google's Homepage">I&rsquo;m an inline style link with title</a><br>
+<a href="https://www.mozilla.org">I&rsquo;m a reference style link</a><br>
+<a href="./pc-second-post.md">I&rsquo;m a relative reference to a repository file</a><br>
+<a href="https://www.mozilla.org">You can use numbers for the reference style link definition.</a><br>
+Or leave it empty and use the <a href="http://www.reddit.com">link text itself</a>.</p>
+<p>URLs and URLs in angled brackets will automatically get turned into links.<br>
+<a href="http://example.com">http://example.com</a> or <a href="http://example.com">http://example.com</a> and sometimes example.com (but not on GitHub for example).</p>
+<p>Some text to show that the reference links can follow later.</p>
+<h2 id="code-and-syntax-highlighting">Code and Syntax highlighting</h2>
+<p>Code blocks are part of the Markdown spec, but syntax highlighting isn&rsquo;t. However, many renderers support syntax highlighting. Which languages are supported and how those language names should be written will vary from renderer to renderer.</p>
+<p>Inline <code>code</code> has <code>back ticks</code> around it.</p>
+<p>Blocks of code are indented with three back-ticks, or are indented with four spaces. I recommend only using the fenced code blocks &ndash; they&rsquo;re easier and only they support syntax highlighting.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">s</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;JavaScript syntax highlighting&#34;</span>;
+<span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">s</span>);
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">s <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Python syntax highlighting&#34;</span>
+<span style="color:#66d9ef">print</span> s
+</code></pre></div><pre><code>Four spaces indenting code block
+// Random sample text.
+</code></pre>
+<pre><code>No language indicated, so no syntax highlighting.
+But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
+</code></pre><h2 id="tables">Tables</h2>
+<p>Tables aren&rsquo;t part of the core Markdown spec, but they are part of GFM and Markdown Here supports them. They are an easy way of adding tables to your email &ndash; a task that would otherwise require copy-pasting from another application.</p>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td align="center">are neat</td>
+<td align="right">$1</td>
+</tr>
+</tbody>
+</table>
+<p>There must be at least 3 dashes separating each header cell.<br>
+The outer pipes (|) are optional, and you don&rsquo;t need to make the<br>
+raw Markdown line up prettily. You can also use inline Markdown.</p>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>Less</th>
+<th>Pretty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Still</em></td>
+<td><code>renders</code></td>
+<td><strong>nicely</strong></td>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<h2 id="blockquotes">Blockquotes</h2>
+<blockquote>
+<p>Blockquotes are very in email to emulate reply text.
+This line is part of the same quote.</p>
+</blockquote>
+<p>quote break.</p>
+<blockquote>
+<p>This is a very long line that will still be quoted properly when it wraps. Oh boy let&rsquo;s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote.</p>
+</blockquote>
+<h2 id="inline-html">Inline HTML</h2>
+<p>You can also use raw HTML in your Markdown, and it&rsquo;ll mostly work pretty well.</p>
+<dl>
+  <dt>Definition list</dt>
+  <dd>Is something people use sometimes.</dd>
+  <dt>Markdown in HTML</dt>
+  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+</dl>
+<h2 id="horizontal-rule">Horizontal rule</h2>
+<p>Three or more&hellip;</p>
+<hr>
+<p>Hyphens</p>
+<hr>
+<p>Asterisks</p>
+<hr>
+<p>Underscores</p>
+<h2 id="line-breaks">Line breaks</h2>
+<p>Here&rsquo;s a line for us to start with.</p>
+<p>This line is separated from the one above by two new lines, so it will be a <em>new paragraph</em>.</p>
+<p>This line is also a separate paragraph, but&hellip;<br>
+This line is a separate line in the <em>same paragraph</em>. To achieve this you need put two blank spaces at the end of the previous line before starting a new line.</p>
+
+    </div>
+  </div>
+
+      </div>
+      
+      <div class="right-sidebar">
+      </div>
+      
+    </div>
+  </body>
+</html>

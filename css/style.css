@@ -10,7 +10,7 @@ html {
     height: 100%;
 }
 
-ul {
+ul, ol{
     padding-left: 2.5rem;
 }
 
@@ -25,6 +25,7 @@ strong {
     --forest-green-accent: rgba(31, 97, 75, 0.08);
     --forest-green: #1f614b;
     --lightlightgray: #E8E8E8;
+    --white-smoke: #F5F5F5;
 
     --nav-transition-in: 0.25s;
     --nav-transition-out: 0.3s;
@@ -110,7 +111,7 @@ body {
 /* ================ Content List styling ================ */
 
 .article-post-container p {
-    padding-bottom: 1rem;
+    margin: 1rem 0;
 }
 
 .post-anchor {
@@ -173,6 +174,90 @@ body {
 
 /* ================ Content Single Article styling ================ */
 
+/*=== Post Banner ===*/
+
+.post-banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--lightlightgray);
+}
+
+/*=== Post body ===*/
+
 .post-body {
     margin: 2.5rem 2rem;
+}
+
+.post-body h1, .post-body h2,
+.post-body h3, .post-body h4,
+.post-body h5, .post-body h6 {
+    margin: 1rem 0 1rem 0;
+}
+
+/*=== Code and syntax highlighting ===*/
+code {
+    background-color: var(--lightlightgray);
+    padding: .2em .4em;
+    font-size: 85%;
+    border-radius: 6px;
+}
+
+.highlight code {
+    background-color: #272822;
+    padding: 0;
+    border-radius: 0;
+}
+
+pre {
+    background-color: var(--lightlightgray);
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 1rem 0 1rem 0;
+}
+
+/*=== horizontal rule ===*/
+hr {
+    margin: 1rem 0 1rem 0;
+    height: 1px;
+    background-color: lightgray;
+    border: none;
+}
+
+/*=== blockquotes ===*/
+blockquote {
+    background-color: var(--white-smoke);
+    border-left: 2px solid var(--forest-green-light);
+    padding: 1rem 0 1rem 1rem;
+}
+
+blockquote p:first-child {
+    margin-top: 0;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+/*=== images ===*/
+
+figure {
+    text-align: center;
+}
+
+/*=== tablse ===*/
+table {
+    border-collapse: collapse;
+}
+
+th {
+    background-color: var(--lightlightgray);
+}
+
+td, th{
+    padding: 0.5em 1em;
+    border: 1px solid lightgray;
+}
+
+tr:nth-child(odd) {
+    /* striped rows color here */
 }

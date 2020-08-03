@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Diwash Rai</title>
-    <link>http://www.diwashrai.com/</link>
-    <description>Recent content on Diwash Rai</description>
+    <title>Coding on Diwash Rai</title>
+    <link>http://www.diwashrai.com/coding/</link>
+    <description>Recent content in Coding on Diwash Rai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Mar 2020 21:13:26 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2020 20:57:19 +0100</lastBuildDate>
     
-	<atom:link href="http://www.diwashrai.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.diwashrai.com/coding/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -23,18 +23,6 @@ Strong emphasis, aka bold, with asterisks or underscores.
 Combined emphasis with asterisks and underscores.
 Strikethrough uses two tildes. Scratch this.
 Lists  First ordered list item. Second ordered list item.   Unordered sub-list.</description>
-    </item>
-    
-    <item>
-      <title>Links</title>
-      <link>http://www.diwashrai.com/links/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.diwashrai.com/links/</guid>
-      <description>Links This page will link useful resources that I find useful or may have referred to else where on the site.
-CodeForces
-Competitive Programmer&amp;rsquo;s Handbook
-Markdown Cheatsheet</description>
     </item>
     
   </channel>
