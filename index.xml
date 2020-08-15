@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Creating a Hugo Blog with your own layout</title>
+      <link>http://www.diwashrai.com/coding/first-hugo-blog-own-layout/</link>
+      <pubDate>Thu, 06 Aug 2020 19:52:40 +0100</pubDate>
+      
+      <guid>http://www.diwashrai.com/coding/first-hugo-blog-own-layout/</guid>
+      <description>Creating a Hugo Blog with your own layout A Hugo blog is a great way to learn more about HTML and CSS before jumping into a CSS framework. You can even host the site for free using GitHub pages and come out of it with a blog/site that you can be proud of. This is what I wanted to do when I created my blog.
+However, after reading some guides and watching some videos, I had no idea where to start.</description>
+    </item>
+    
+    <item>
       <title>Markdown Cheatsheet</title>
       <link>http://www.diwashrai.com/coding/markdown_cheatsheet/</link>
       <pubDate>Sun, 02 Aug 2020 20:57:19 +0100</pubDate>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link href="/css/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Diwash Rai</title>
+  </head>
+
+  <body>
+    
+    <div class="grid">
+      
+      <div class="navbar">
+        <a href="http://www.diwashrai.com/">
+  <header class="nav-banner nav-active">
+    <div class="nav-banner-title">Diwash Rai</div>
+    <div class="nav-banner-subtitle">Personal Blog</div>
+  </header>
+</a>
+        
+<nav class="nav-list">
+  <ul>
+    
+    <a href="/coding"><li>Coding</li></a>
+    
+    <a href="/productivity"><li>Productivity</li></a>
+    
+    <a href="/links"><li>Links</li></a>
+    
+  </ul>
+</nav>
+      </div>
+      
+      <div class="main-content">
+        
+  <div class="article-post-container">
+    <div class="post-banner" style="background-image: url('/banners/kari-shea-1SAnrIxw5OY-unsplash.jpg'); background-position: center; height: 300px">
+    </div>
+    <div class="post-body">
+      <h1 id="hahahugoshortcode-s0-hbhb">Creating a Hugo Blog with your own layout</h1>
+<p>A Hugo blog is a great way to learn more about HTML and CSS before jumping into a CSS framework.
+You can even host the site for free using GitHub pages and come out of it with a blog/site that you can be proud of.
+This is what I wanted to do when I created my blog.</p>
+<p>However, after reading some guides and watching some videos, I had no idea where to start.</p>
+<p>The Home page? The Layout? The navigation bar? Styling the HTML elements?</p>
+<p>In reality, it might not matter which area you tackle first. What <strong>does</strong> matter is that this confusion can delay or stop this endeavour.</p>
+<p>What I&rsquo;ve presented here is the incremental steps that I took when creating my own blog.
+What I <strong>won&rsquo;t</strong> be covering is the specific techinical implementation details for each step.
+I feel this is handled already else and far better than I can.</p>
+<hr>
+<ol>
+<li>Create blank hugo site folder structure</li>
+<li>Put in some dummy content</li>
+<li>Create a skeleton of the site</li>
+<li>Choose a layout for your site</li>
+<li>CSS styling for the navigation bar</li>
+<li>CSS styling for the list elements</li>
+<li>Create markdown guide/cheat sheet as a first practice post</li>
+<li>Start posting</li>
+</ol>
+<p>The main advantage to this approach is actually that after each step you can see satisfying progress beng made which is very motivating.</p>
+<p>Although I won&rsquo;t be going into the nitty gritty implementation details here are a few links that could help you out when following these steps.</p>
+<ul>
+<li><a href="https://gohugo.io/getting-started/quick-start/">Official quickstart guide</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3">Hugo introductory YouTube series</a></li>
+<li><a href="https://zwbetz.com/make-a-hugo-blog-from-scratch/">Making a hugo blog from scratch walkthrough</a></li>
+</ul>
+<h4 id="1-create-blank-hugo-site-folder-structure">1. Create blank hugo site folder structure</h4>
+<p>The first step is very simple and is just to ensure the same blank starting point. Create your hugo website project folder with the following command.</p>
+<pre><code>hugo new site [path] [flags]
+</code></pre><p>You should be left with a folder structure similar to the one shown below.</p>
+<figure>
+    <img src="/coding/coding_post_1/hugo_new_site.png"
+         alt="New site file structure" width="100%"/> 
+</figure>
+
+<h4 id="2-put-in-some-dummy-content">2. Put in some dummy content</h4>
+<p>The next step is to create some dummy content that you can use to show the HTML or CSS changes you will be making.</p>
+<p>As an example I have created four sections for each season and a William Shakespeare poem that lives in each of those sections.</p>
+<pre><code>hugo new autumn/Sonnet-73.md
+</code></pre><figure>
+    <img src="/coding/coding_post_1/dummy_content.png"
+         alt="Dummy content created" width="100%"/> 
+</figure>
+
+<h4 id="3-create-a-skeleton-of-the-site">3. Create a skeleton of the site</h4>
+<p>The point of this next step is get to a point where there is zero CSS styling, however, you can still navigate the site and the dummy content you have created so far.</p>
+<p><figure>
+    <img src="/coding/coding_post_1/skeleton_structure_1.png"
+         alt="Home page" width="100%"/> 
+</figure>
+
+<figure>
+    <img src="/coding/coding_post_1/skeleton_structure_2.png"
+         alt="Spring section" width="100%"/> 
+</figure>
+
+<figure>
+    <img src="/coding/coding_post_1/skeleton_structure_3.png"
+         alt="Sonnet 98" width="100%"/> 
+</figure>
+</p>
+<h4 id="4-choose-a-layout-for-your-site">4. Choose a layout for your site</h4>
+<p>This next step is where you actually have to decided on a layout for your site and implement it.</p>
+<p>Will it have the navigation bar at the top or on one side?<br>
+Where will the posts be listed and where will the content be shown?</p>
+<p>This may be a good opportunity to brush up on CSS grid and flexbox to help you do this.</p>
+<figure>
+    <img src="/coding/coding_post_1/grid_layout_1.png"
+         alt="Grid layout Home page" width="100%"/> 
+</figure>
+
+<h4 id="5-css-styling-for-the-navigation-bar">5. CSS styling for the navigation bar</h4>
+<p>Now we finally get to dive into some CSS. This part really needs no elaboration. Write the CSS for your site&rsquo;s navigation bar.</p>
+<figure>
+    <img src="/coding/coding_post_1/nav_bar_styling.png"
+         alt="Navigation bar with styling" width="100%"/> 
+</figure>
+
+<h4 id="6-css-styling-for-the-list-elements">6. CSS styling for the list elements</h4>
+<p>The next step is to do the styling for how each post element will look when it is listed on your site.</p>
+<p>By now you should notice that your site is slowly starting to take form.</p>
+<figure>
+    <img src="/coding/coding_post_1/list_styling.png"
+         alt="List styling with styling" width="100%"/> 
+</figure>
+
+<figure>
+    <img src="/coding/coding_post_1/single_no_styling.png"
+         alt="Content no styling" width="100%"/> 
+</figure>
+
+<p>You could start posting things on your blog and it would technically be &lsquo;functional&rsquo;.</p>
+<p>However, as the contents of the actual post are still unstyled, we have one more step.</p>
+<h4 id="7-create-markdown-guidecheat-sheet-as-a-first-practice-post">7. Create markdown guide/cheat sheet as a first practice post</h4>
+<p>Finally you need to do the CSS for all the HTML elements that could be involved in a blog post.</p>
+<p>A good way to do this is to copy one of those markdown cheatsheet/guide pages and ensure that the markdown is styled on your site too.</p>
+<figure>
+    <img src="/coding/coding_post_1/markdown_styling.png"
+         alt="Markdown styling" width="100%"/> 
+</figure>
+
+<h4 id="8-start-posting">8. Start posting!</h4>
+<p>Your site should now be in a position where you can start posting and you should start as soon as you can.</p>
+<p>Ofcourse there&rsquo;s still more you can add to it. A few of these things could be to make it responsive, pagination, dark mode etc.</p>
+
+    </div>
+  </div>
+
+      </div>
+      
+      <div class="right-sidebar">
+      </div>
+      
+    </div>
+  </body>
+</html>
