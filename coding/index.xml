@@ -6,10 +6,19 @@
     <description>Recent content in Coding on Diwash Rai</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 06 Aug 2020 19:52:40 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2020 21:18:01 +0100</lastBuildDate>
     
 	<atom:link href="http://www.diwashrai.com/coding/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sorting Algorithm Visualiser</title>
+      <link>http://www.diwashrai.com/coding/sorting-algorithm-visualiser/</link>
+      <pubDate>Sun, 06 Sep 2020 21:18:01 +0100</pubDate>
+      
+      <guid>http://www.diwashrai.com/coding/sorting-algorithm-visualiser/</guid>
+      <description>Sorting Algorithm Visualiser </description>
+    </item>
     
     <item>
       <title>Creating a Hugo Blog with your own layout</title>

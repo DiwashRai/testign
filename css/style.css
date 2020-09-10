@@ -144,6 +144,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    overflow-x: hidden;
 }
 
 .post-item-title {

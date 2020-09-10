@@ -1,0 +1,11 @@
+.bar {
+    height: 5px;
+    background-color: green;
+    margin-bottom: 5px;
+}
+
+#graph-area {
+    background-color: lightgray;
+    width: 100%;
+    min-height: 200px;
+}
