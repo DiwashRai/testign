@@ -1,27 +1,64 @@
-const total_bars = 400;
-let bar_color = "white";
-let select_color = "red";
 
-let arr = [];
-for (i = 0; i < total_bars; ++i) {
-    arr.push(Math.ceil(Math.random() * 600));
+var totalBars = 300;
+var barColor = "white";
+var selectedColor = "red";
+var maxBarHeight = 600;
+
+var intArr = [];
+var divArr = Array(totalBars).fill(0);
+
+setup();
+
+function setup() {
+    for (i = 0; i < totalBars; ++i) {
+        intArr.push(Math.ceil(Math.random() * maxBarHeight));
+    }
+
+    let area = document.getElementById("graph-area");
+    for (i = 0; i < totalBars; ++i) {
+        divArr[i] = document.createElement("div");
+        divArr[i].classList.add("bar");
+        divArr[i].style.height = intArr[i] + "px";
+        area.appendChild(divArr[i]);
+    }
+
+    window.sortButton = document.getElementById("sort-btn");
+    window.sortButton.addEventListener("click", sortClick);
+
+    window.resetButton = document.getElementById("reset-btn");
+    window.resetButton.addEventListener("click", resetClick);
 }
 
-console.log(arr);
-
-let area = document.getElementById("graph-area");
-
-let bars_arr = Array(total_bars).fill(0);
-
-for (i = 0; i < total_bars; ++i) {
-    bars_arr[i] = document.createElement("div");
-    bars_arr[i].classList.add("bar");
-    bars_arr[i].style.height = arr[i] + "px";
-    area.appendChild(bars_arr[i]);
+function resetGraph() {
+    for (i = 0; i < totalBars; ++i) {
+        intArr[i] = Math.ceil(Math.random() * maxBarHeight);                 
+        divArr[i].style.height = intArr[i] + "px";
+    }
 }
 
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+async function sortClick() {
+    resetButton.disabled = true;
+    sortButton.disabled = true;
+    sortButton.style.padding = "4px 0";
+    await quickSort(intArr, 0, intArr.length - 1);
+    // await bubbleSort(intArr, divArr);
+    sortButton.style.padding = "0";
+    resetButton.disabled = false;
+    sortButton.disabled = false;
+}
+
+async function resetClick() {
+    resetGraph();
+}
+
+async function quickSort(arr, left, right) {
+    if (left >= right)
+        return;
+
+    pivot = await partition(arr, left, right);
+
+    await quickSort(arr, left, pivot - 1);
+    await quickSort(arr, pivot, right)
 }
 
 async function partition(arr, left, right) {
@@ -33,28 +70,18 @@ async function partition(arr, left, right) {
             --right;
         [arr[left], arr[right]] = [arr[right], arr[left]];
 
-        bars_arr[left].style.backgroundColor = select_color;
-        bars_arr[right].style.backgroundColor = select_color;
+        divArr[left].style.backgroundColor = selectedColor;
+        divArr[right].style.backgroundColor = selectedColor;
         await sleep(10);
-        bars_arr[left].style.height = arr[left] + "px";
-        bars_arr[right].style.height = arr[right] + "px";
-        bars_arr[left].style.backgroundColor = bar_color;
-        bars_arr[right].style.backgroundColor = bar_color;
+        divArr[left].style.height = arr[left] + "px";
+        divArr[right].style.height = arr[right] + "px";
+        divArr[left].style.backgroundColor = barColor;
+        divArr[right].style.backgroundColor = barColor;
     }
     return left;
 }
 
-async function quick_sort(arr, left, right) {
-    if (left >= right)
-        return;
-
-    pivot = await partition(arr, left, right);
-
-    await quick_sort(arr, left, pivot - 1);
-    await quick_sort(arr, pivot, right)
-}
-
-async function bubble_sort(arr) {
+async function bubbleSort(arr, divArr) {
     for (i = 0; i < arr.length; ++i) {
         let sorted = true;
         for (j = 0; j < arr.length - i -1; ++j) {
@@ -64,13 +91,13 @@ async function bubble_sort(arr) {
                 arr[j] = arr[j + 1];
                 arr[j + 1] = store;
             }
-            bars_arr[j].style.backgroundColor = select_color;
-            bars_arr[j + 1].style.backgroundColor = select_color;
-            bars_arr[j].style.height = arr[j] + "px";
-            bars_arr[j + 1].style.height = arr[j + 1] + "px";
+            divArr[j].style.backgroundColor = selectedColor;
+            divArr[j + 1].style.backgroundColor = selectedColor;
+            divArr[j].style.height = arr[j] + "px";
+            divArr[j + 1].style.height = arr[j + 1] + "px";
             await sleep(10);
-            bars_arr[j].style.backgroundColor = bar_color;
-            bars_arr[j + 1].style.backgroundColor = bar_color;
+            divArr[j].style.backgroundColor = barColor;
+            divArr[j + 1].style.backgroundColor = barColor;
         }
         if (sorted) {
             break;
@@ -78,7 +105,6 @@ async function bubble_sort(arr) {
     }
 }
 
-// bubble_sort(arr);
-quick_sort(arr, 0, arr.length - 1)
-
-console.log(arr)
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}

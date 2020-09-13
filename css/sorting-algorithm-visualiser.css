@@ -1,35 +1,111 @@
+/* ================ Variables Section ================ */
+
+:root {
+    --background-dark: #272b34;
+    --background-light: #4d5466;
+
+    --default-btn-color: #d3d7de;
+
+    --sort-btn-color: #72ff00;
+    --sort-btn-rgb: 114, 255, 0;
+    --reset-btn-color: #f5d300;
+    --reset-btn-rgb: 245, 211, 0;
+    --btn-opacity: 0.15;
+    --btn-hover-opacity: 0.3;
+}
+
+/* ================ Standard elements ================ */
+
 body {
-    background-color: #272b34;
+    background-color: var(--background-dark);
 }
 
 h1 {
     color: #66D9EF;
 }
 
-.bar {
-    width: 5px;
-    /*background-color: #00563f;*/
-    background-color: white;
-    margin-right: 1px;
+/* ================ Display elements ================ */
+
+.graph-container {
+    background-color: var(--background-light);
+    padding: 1rem;
+    margin: 8px 16px;
 }
 
 #graph-area {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    min-height: 200px;
+    min-height: 50px;
+    justify-content: center;
 }
 
-.graph-container {
-    background-color: #4d5466;
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 6px;
+.control-bar {
+    margin: 8px 16px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid gray;
+    height: 60px;
 }
 
-.control {
-    margin: 1rem;
-    background-color: #4d5466;
+.bar {
+    width: 5px;
+    background-color: white;
+    margin-right: 1px;
+}
+
+/* ================ UI Element: Button ================ */
+
+.control-bar button {
+    margin: auto 2px;
     border-radius: 6px;
-    height: 50px;
+    line-height: 1.8;
+    width: 100px;
+    vertical-align: middle;
+    background-color: transparent;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: var(--default-btn-color);
+    border: 2px solid var(--default-btn-color);
+    text-transform: uppercase;
+    outline: none;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+.control-bar button:hover {
+    cursor: pointer;
+}
+
+#sort-btn {
+    border: 2px solid var(--sort-btn-color);
+    color: var(--sort-btn-color);
+    background-color: rgba(var(--sort-btn-rgb), var(--btn-opacity));
+}
+
+#sort-btn:hover, #sort-btn:focus {
+    background-color: rgba(var(--sort-btn-rgb), var(--btn-hover-opacity));
+}
+
+#reset-btn {            
+    border: 2px solid var(--reset-btn-color);
+    color: var(--reset-btn-color);
+    background-color: rgba(var(--reset-btn-rgb), var(--btn-opacity));
+}
+
+#reset-btn:hover, #reset-btn:focus {
+    background-color: rgba(var(--reset-btn-rgb), var(--btn-hover-opacity));
+}
+
+/* ================ UI Element: Button ================ */
+
+.toggle {
+    width: 200px;
+    height:40px;
+    margin: auto 2px;
+    background-color: var(--background-dark);
+    border-radius: 20px;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
 }
