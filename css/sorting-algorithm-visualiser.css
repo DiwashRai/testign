@@ -44,7 +44,7 @@ h1 {
     margin: 8px 16px;
     display: flex;
     justify-content: center;
-    border: 1px solid gray;
+    /*border: 1px solid gray;*/
     height: 60px;
 }
 
@@ -87,7 +87,7 @@ h1 {
     background-color: rgba(var(--sort-btn-rgb), var(--btn-hover-opacity));
 }
 
-#reset-btn {            
+#reset-btn {
     border: 2px solid var(--reset-btn-color);
     color: var(--reset-btn-color);
     background-color: rgba(var(--reset-btn-rgb), var(--btn-opacity));
