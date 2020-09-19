@@ -31,7 +31,7 @@ function setup() {
 
 function resetGraph() {
     for (i = 0; i < totalBars; ++i) {
-        intArr[i] = Math.ceil(Math.random() * maxBarHeight);                 
+        intArr[i] = Math.ceil(Math.random() * maxBarHeight);
         divArr[i].style.height = intArr[i] + "px";
     }
 }
@@ -40,8 +40,14 @@ async function sortClick() {
     resetButton.disabled = true;
     sortButton.disabled = true;
     sortButton.style.padding = "4px 0";
-    await quickSort(intArr, 0, intArr.length - 1);
-    // await bubbleSort(intArr, divArr);
+    let bubbleToggle = document.getElementById("bubble-toggle");
+    let quickToggle = document.getElementById("quick-toggle");
+    if (bubbleToggle.checked) {
+        await bubbleSort(intArr, divArr);
+    }
+    else if (quickToggle.checked) {
+        await quickSort(intArr, 0, intArr.length - 1);
+    }
     sortButton.style.padding = "0";
     resetButton.disabled = false;
     sortButton.disabled = false;
